@@ -1,5 +1,6 @@
 {% set name = "boutiques" %}
 {% set version = "0.5.28" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -18,18 +19,15 @@ build:
 
 requirements:
   host:
-    - python >=3.5
-    - simplejson
-    - termcolor
-    - jsonschema
-    - tabulate
+    - python {{ python_min }}
+    - hatchling
+    - hatch-vcs
     - pip
-    - setuptools
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - simplejson
-    - jsonschema
     - termcolor
+    - jsonschema
     - tabulate
 
 test:
@@ -39,6 +37,7 @@ test:
     - pip check
     - bosh version
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
