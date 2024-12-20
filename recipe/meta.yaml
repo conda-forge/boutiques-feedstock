@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/boutiques/boutiques/archive/{{ version }}.tar.gz
-  sha256: 64e59448cf3c896ab9dd8b6d9a16512abf5a8913400e6ae24aca067e7025c0ea
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/boutiques-{{ version }}.tar.gz
+  sha256: da35f50e9f4bbe7317921d5f57a22e4b9de7d9af2a6a27479913a2b469e3b018
 
 build:
   entry_points:
