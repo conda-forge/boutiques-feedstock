@@ -1,5 +1,5 @@
 {% set name = "boutiques" %}
-{% set version = "0.5.28" %}
+{% set version = "0.5.29" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/boutiques-{{ version }}.tar.gz
-  sha256: da35f50e9f4bbe7317921d5f57a22e4b9de7d9af2a6a27479913a2b469e3b018
+  sha256: a2c8d037fb4b5f542b6b62c4dbd475b925127db706aee562057cd962ac9e7df1
 
 build:
   entry_points:
